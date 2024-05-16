@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bib00ctq10sy6"]
+
+[ext_resource type="Texture2D" uid="uid://bfaiixbqnf8ae" path="res://mouse.png" id="1_v2iig"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_htsoh"]
+radius = 19.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(9.613, 10.25)
+scale = Vector2(0.250554, 0.275253)
+texture = ExtResource("1_v2iig")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10, 11)
+shape = SubResource("CircleShape2D_htsoh")
